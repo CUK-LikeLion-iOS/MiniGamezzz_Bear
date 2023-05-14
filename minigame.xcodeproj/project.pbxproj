@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DB1EA241CEBBACC1B0FADEF /* Pods_minigame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0A77A4681F5A8CB6427750 /* Pods_minigame.framework */; };
+		1AB572F6062C54FAC6D72B14 /* Pods_minigameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F289A5BC6E1B09DFFA5BABE3 /* Pods_minigameTests.framework */; };
+		66968B60C6259C4273E2714E /* Pods_minigame_minigameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C19079C8121C250F8FFA05 /* Pods_minigame_minigameUITests.framework */; };
+		FF4914EC2A0BE7DF00B82EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914EB2A0BE7DF00B82EC8 /* AppDelegate.swift */; };
+		FF4914EE2A0BE7DF00B82EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914ED2A0BE7DF00B82EC8 /* SceneDelegate.swift */; };
+		FF4914F02A0BE7DF00B82EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914EF2A0BE7DF00B82EC8 /* ViewController.swift */; };
+		FF4914F32A0BE7DF00B82EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4914F12A0BE7DF00B82EC8 /* Main.storyboard */; };
+		FF4914F52A0BE7E000B82EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4914F42A0BE7E000B82EC8 /* Assets.xcassets */; };
+		FF4914F82A0BE7E000B82EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4914F62A0BE7E000B82EC8 /* LaunchScreen.storyboard */; };
+		FF4915032A0BE7E000B82EC8 /* minigameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915022A0BE7E000B82EC8 /* minigameTests.swift */; };
+		FF49150D2A0BE7E000B82EC8 /* minigameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF49150C2A0BE7E000B82EC8 /* minigameUITests.swift */; };
+		FF49150F2A0BE7E000B82EC8 /* minigameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF49150E2A0BE7E000B82EC8 /* minigameUITestsLaunchTests.swift */; };
+		FF4915202A0BEBD000B82EC8 /* minigame.json in Resources */ = {isa = PBXBuildFile; fileRef = FF49151F2A0BEBD000B82EC8 /* minigame.json */; };
+		FF4915222A0BF4FA00B82EC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915212A0BF4FA00B82EC8 /* HomeViewController.swift */; };
+		FF4915242A0BFE9100B82EC8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915232A0BFE9100B82EC8 /* Data.swift */; };
+		FF4915282A0C11DD00B82EC8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4914FF2A0BE7E000B82EC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4914E02A0BE7DF00B82EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4914E72A0BE7DF00B82EC8;
+			remoteInfo = minigame;
+		};
+		FF4915092A0BE7E000B82EC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4914E02A0BE7DF00B82EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4914E72A0BE7DF00B82EC8;
+			remoteInfo = minigame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53C19079C8121C250F8FFA05 /* Pods_minigame_minigameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minigame_minigameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB2AAF46737B9544DED1372 /* Pods-minigame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigame.release.xcconfig"; path = "Target Support Files/Pods-minigame/Pods-minigame.release.xcconfig"; sourceTree = "<group>"; };
+		83704268E83D917C12D9A967 /* Pods-minigame-minigameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigame-minigameUITests.release.xcconfig"; path = "Target Support Files/Pods-minigame-minigameUITests/Pods-minigame-minigameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83AF4E2D47418A5DAED90969 /* Pods-minigameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigameTests.release.xcconfig"; path = "Target Support Files/Pods-minigameTests/Pods-minigameTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB0A77A4681F5A8CB6427750 /* Pods_minigame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minigame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6AE67D36DF0D6E4800C0D8 /* Pods-minigameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigameTests.debug.xcconfig"; path = "Target Support Files/Pods-minigameTests/Pods-minigameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1714205577E7B78FEB2EA0E /* Pods-minigame-minigameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigame-minigameUITests.debug.xcconfig"; path = "Target Support Files/Pods-minigame-minigameUITests/Pods-minigame-minigameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F289A5BC6E1B09DFFA5BABE3 /* Pods_minigameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minigameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BDFBB358319ED647951C6C /* Pods-minigame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigame.debug.xcconfig"; path = "Target Support Files/Pods-minigame/Pods-minigame.debug.xcconfig"; sourceTree = "<group>"; };
+		FF4914E82A0BE7DF00B82EC8 /* minigame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minigame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4914EB2A0BE7DF00B82EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF4914ED2A0BE7DF00B82EC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF4914EF2A0BE7DF00B82EC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF4914F22A0BE7DF00B82EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF4914F42A0BE7E000B82EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF4914F72A0BE7E000B82EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF4914F92A0BE7E000B82EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4914FE2A0BE7E000B82EC8 /* minigameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minigameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4915022A0BE7E000B82EC8 /* minigameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minigameTests.swift; sourceTree = "<group>"; };
+		FF4915082A0BE7E000B82EC8 /* minigameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minigameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF49150C2A0BE7E000B82EC8 /* minigameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minigameUITests.swift; sourceTree = "<group>"; };
+		FF49150E2A0BE7E000B82EC8 /* minigameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minigameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF49151F2A0BEBD000B82EC8 /* minigame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = minigame.json; sourceTree = "<group>"; };
+		FF4915212A0BF4FA00B82EC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF4915232A0BFE9100B82EC8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4914E52A0BE7DF00B82EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB1EA241CEBBACC1B0FADEF /* Pods_minigame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4914FB2A0BE7E000B82EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB572F6062C54FAC6D72B14 /* Pods_minigameTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4915052A0BE7E000B82EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66968B60C6259C4273E2714E /* Pods_minigame_minigameUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED48AD1AE6678D354C36A31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB0A77A4681F5A8CB6427750 /* Pods_minigame.framework */,
+				53C19079C8121C250F8FFA05 /* Pods_minigame_minigameUITests.framework */,
+				F289A5BC6E1B09DFFA5BABE3 /* Pods_minigameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1309830C6373BEF88F4A500 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3BDFBB358319ED647951C6C /* Pods-minigame.debug.xcconfig */,
+				6BB2AAF46737B9544DED1372 /* Pods-minigame.release.xcconfig */,
+				F1714205577E7B78FEB2EA0E /* Pods-minigame-minigameUITests.debug.xcconfig */,
+				83704268E83D917C12D9A967 /* Pods-minigame-minigameUITests.release.xcconfig */,
+				CC6AE67D36DF0D6E4800C0D8 /* Pods-minigameTests.debug.xcconfig */,
+				83AF4E2D47418A5DAED90969 /* Pods-minigameTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF4914DF2A0BE7DF00B82EC8 = {
+			isa = PBXGroup;
+			children = (
+				FF4914EA2A0BE7DF00B82EC8 /* minigame */,
+				FF4915012A0BE7E000B82EC8 /* minigameTests */,
+				FF49150B2A0BE7E000B82EC8 /* minigameUITests */,
+				FF4914E92A0BE7DF00B82EC8 /* Products */,
+				F1309830C6373BEF88F4A500 /* Pods */,
+				CED48AD1AE6678D354C36A31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4914E92A0BE7DF00B82EC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4914E82A0BE7DF00B82EC8 /* minigame.app */,
+				FF4914FE2A0BE7E000B82EC8 /* minigameTests.xctest */,
+				FF4915082A0BE7E000B82EC8 /* minigameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4914EA2A0BE7DF00B82EC8 /* minigame */ = {
+			isa = PBXGroup;
+			children = (
+				FF4914EB2A0BE7DF00B82EC8 /* AppDelegate.swift */,
+				FF4914ED2A0BE7DF00B82EC8 /* SceneDelegate.swift */,
+				FF4914EF2A0BE7DF00B82EC8 /* ViewController.swift */,
+				FF4915212A0BF4FA00B82EC8 /* HomeViewController.swift */,
+				FF4915232A0BFE9100B82EC8 /* Data.swift */,
+				FF49151F2A0BEBD000B82EC8 /* minigame.json */,
+				FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */,
+				FF4914F12A0BE7DF00B82EC8 /* Main.storyboard */,
+				FF4914F42A0BE7E000B82EC8 /* Assets.xcassets */,
+				FF4914F62A0BE7E000B82EC8 /* LaunchScreen.storyboard */,
+				FF4914F92A0BE7E000B82EC8 /* Info.plist */,
+			);
+			path = minigame;
+			sourceTree = "<group>";
+		};
+		FF4915012A0BE7E000B82EC8 /* minigameTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4915022A0BE7E000B82EC8 /* minigameTests.swift */,
+			);
+			path = minigameTests;
+			sourceTree = "<group>";
+		};
+		FF49150B2A0BE7E000B82EC8 /* minigameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF49150C2A0BE7E000B82EC8 /* minigameUITests.swift */,
+				FF49150E2A0BE7E000B82EC8 /* minigameUITestsLaunchTests.swift */,
+			);
+			path = minigameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4914E72A0BE7DF00B82EC8 /* minigame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4915122A0BE7E000B82EC8 /* Build configuration list for PBXNativeTarget "minigame" */;
+			buildPhases = (
+				F8B511FE53BC7C7014431E5B /* [CP] Check Pods Manifest.lock */,
+				FF4914E42A0BE7DF00B82EC8 /* Sources */,
+				FF4914E52A0BE7DF00B82EC8 /* Frameworks */,
+				FF4914E62A0BE7DF00B82EC8 /* Resources */,
+				4F41E35B63096B6AD332A9E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = minigame;
+			productName = minigame;
+			productReference = FF4914E82A0BE7DF00B82EC8 /* minigame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4914FD2A0BE7E000B82EC8 /* minigameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4915152A0BE7E000B82EC8 /* Build configuration list for PBXNativeTarget "minigameTests" */;
+			buildPhases = (
+				DAAEE93F2DB9232FD6812940 /* [CP] Check Pods Manifest.lock */,
+				FF4914FA2A0BE7E000B82EC8 /* Sources */,
+				FF4914FB2A0BE7E000B82EC8 /* Frameworks */,
+				FF4914FC2A0BE7E000B82EC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4915002A0BE7E000B82EC8 /* PBXTargetDependency */,
+			);
+			name = minigameTests;
+			productName = minigameTests;
+			productReference = FF4914FE2A0BE7E000B82EC8 /* minigameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF4915072A0BE7E000B82EC8 /* minigameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4915182A0BE7E000B82EC8 /* Build configuration list for PBXNativeTarget "minigameUITests" */;
+			buildPhases = (
+				1BBABEA433A46E2D317D05B2 /* [CP] Check Pods Manifest.lock */,
+				FF4915042A0BE7E000B82EC8 /* Sources */,
+				FF4915052A0BE7E000B82EC8 /* Frameworks */,
+				FF4915062A0BE7E000B82EC8 /* Resources */,
+				C9B9F669C0AFBA5B74661A4C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF49150A2A0BE7E000B82EC8 /* PBXTargetDependency */,
+			);
+			name = minigameUITests;
+			productName = minigameUITests;
+			productReference = FF4915082A0BE7E000B82EC8 /* minigameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4914E02A0BE7DF00B82EC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FF4914E72A0BE7DF00B82EC8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					FF4914FD2A0BE7E000B82EC8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = FF4914E72A0BE7DF00B82EC8;
+					};
+					FF4915072A0BE7E000B82EC8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = FF4914E72A0BE7DF00B82EC8;
+					};
+				};
+			};
+			buildConfigurationList = FF4914E32A0BE7DF00B82EC8 /* Build configuration list for PBXProject "minigame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4914DF2A0BE7DF00B82EC8;
+			productRefGroup = FF4914E92A0BE7DF00B82EC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4914E72A0BE7DF00B82EC8 /* minigame */,
+				FF4914FD2A0BE7E000B82EC8 /* minigameTests */,
+				FF4915072A0BE7E000B82EC8 /* minigameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4914E62A0BE7DF00B82EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4914F82A0BE7E000B82EC8 /* LaunchScreen.storyboard in Resources */,
+				FF4914F52A0BE7E000B82EC8 /* Assets.xcassets in Resources */,
+				FF4914F32A0BE7DF00B82EC8 /* Main.storyboard in Resources */,
+				FF4915202A0BEBD000B82EC8 /* minigame.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4914FC2A0BE7E000B82EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4915062A0BE7E000B82EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BBABEA433A46E2D317D05B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-minigame-minigameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F41E35B63096B6AD332A9E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-minigame/Pods-minigame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-minigame/Pods-minigame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-minigame/Pods-minigame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9B9F669C0AFBA5B74661A4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-minigame-minigameUITests/Pods-minigame-minigameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-minigame-minigameUITests/Pods-minigame-minigameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-minigame-minigameUITests/Pods-minigame-minigameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAAEE93F2DB9232FD6812940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-minigameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8B511FE53BC7C7014431E5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-minigame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4914E42A0BE7DF00B82EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4914F02A0BE7DF00B82EC8 /* ViewController.swift in Sources */,
+				FF4915242A0BFE9100B82EC8 /* Data.swift in Sources */,
+				FF4915282A0C11DD00B82EC8 /* MyCollectionViewCell.swift in Sources */,
+				FF4914EC2A0BE7DF00B82EC8 /* AppDelegate.swift in Sources */,
+				FF4914EE2A0BE7DF00B82EC8 /* SceneDelegate.swift in Sources */,
+				FF4915222A0BF4FA00B82EC8 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4914FA2A0BE7E000B82EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4915032A0BE7E000B82EC8 /* minigameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4915042A0BE7E000B82EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF49150F2A0BE7E000B82EC8 /* minigameUITestsLaunchTests.swift in Sources */,
+				FF49150D2A0BE7E000B82EC8 /* minigameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4915002A0BE7E000B82EC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4914E72A0BE7DF00B82EC8 /* minigame */;
+			targetProxy = FF4914FF2A0BE7E000B82EC8 /* PBXContainerItemProxy */;
+		};
+		FF49150A2A0BE7E000B82EC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4914E72A0BE7DF00B82EC8 /* minigame */;
+			targetProxy = FF4915092A0BE7E000B82EC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF4914F12A0BE7DF00B82EC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4914F22A0BE7DF00B82EC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF4914F62A0BE7E000B82EC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4914F72A0BE7E000B82EC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF4915102A0BE7E000B82EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF4915112A0BE7E000B82EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4915132A0BE7E000B82EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BDFBB358319ED647951C6C /* Pods-minigame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = minigame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pr.minigame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF4915142A0BE7E000B82EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB2AAF46737B9544DED1372 /* Pods-minigame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = minigame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pr.minigame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF4915162A0BE7E000B82EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6AE67D36DF0D6E4800C0D8 /* Pods-minigameTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pr.minigameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/minigame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/minigame";
+			};
+			name = Debug;
+		};
+		FF4915172A0BE7E000B82EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AF4E2D47418A5DAED90969 /* Pods-minigameTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pr.minigameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/minigame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/minigame";
+			};
+			name = Release;
+		};
+		FF4915192A0BE7E000B82EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1714205577E7B78FEB2EA0E /* Pods-minigame-minigameUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pr.minigameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = minigame;
+			};
+			name = Debug;
+		};
+		FF49151A2A0BE7E000B82EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83704268E83D917C12D9A967 /* Pods-minigame-minigameUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pr.minigameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = minigame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4914E32A0BE7DF00B82EC8 /* Build configuration list for PBXProject "minigame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4915102A0BE7E000B82EC8 /* Debug */,
+				FF4915112A0BE7E000B82EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4915122A0BE7E000B82EC8 /* Build configuration list for PBXNativeTarget "minigame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4915132A0BE7E000B82EC8 /* Debug */,
+				FF4915142A0BE7E000B82EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4915152A0BE7E000B82EC8 /* Build configuration list for PBXNativeTarget "minigameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4915162A0BE7E000B82EC8 /* Debug */,
+				FF4915172A0BE7E000B82EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4915182A0BE7E000B82EC8 /* Build configuration list for PBXNativeTarget "minigameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4915192A0BE7E000B82EC8 /* Debug */,
+				FF49151A2A0BE7E000B82EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF4914E02A0BE7DF00B82EC8 /* Project object */;
+}
