@@ -11,7 +11,6 @@
 		1AB572F6062C54FAC6D72B14 /* Pods_minigameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F289A5BC6E1B09DFFA5BABE3 /* Pods_minigameTests.framework */; };
 		66968B60C6259C4273E2714E /* Pods_minigame_minigameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C19079C8121C250F8FFA05 /* Pods_minigame_minigameUITests.framework */; };
 		AD2444D12A11CD0A000093E0 /* SetPlayerNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2444D02A11CD0A000093E0 /* SetPlayerNumberVC.swift */; };
-		AD2444D32A11FD90000093E0 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2444D22A11FD90000093E0 /* GameVC.swift */; };
 		FF4914EC2A0BE7DF00B82EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914EB2A0BE7DF00B82EC8 /* AppDelegate.swift */; };
 		FF4914EE2A0BE7DF00B82EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914ED2A0BE7DF00B82EC8 /* SceneDelegate.swift */; };
 		FF4914F02A0BE7DF00B82EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914EF2A0BE7DF00B82EC8 /* ViewController.swift */; };
@@ -51,7 +50,6 @@
 		83AF4E2D47418A5DAED90969 /* Pods-minigameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigameTests.release.xcconfig"; path = "Target Support Files/Pods-minigameTests/Pods-minigameTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB0A77A4681F5A8CB6427750 /* Pods_minigame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minigame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2444D02A11CD0A000093E0 /* SetPlayerNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPlayerNumberVC.swift; sourceTree = "<group>"; };
-		AD2444D22A11FD90000093E0 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		CC6AE67D36DF0D6E4800C0D8 /* Pods-minigameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigameTests.debug.xcconfig"; path = "Target Support Files/Pods-minigameTests/Pods-minigameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1714205577E7B78FEB2EA0E /* Pods-minigame-minigameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigame-minigameUITests.debug.xcconfig"; path = "Target Support Files/Pods-minigame-minigameUITests/Pods-minigame-minigameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F289A5BC6E1B09DFFA5BABE3 /* Pods_minigameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minigameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +158,6 @@
 				FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */,
 				FF4914F12A0BE7DF00B82EC8 /* Main.storyboard */,
 				AD2444D02A11CD0A000093E0 /* SetPlayerNumberVC.swift */,
-				AD2444D22A11FD90000093E0 /* GameVC.swift */,
 				FF4914F42A0BE7E000B82EC8 /* Assets.xcassets */,
 				FF4914F62A0BE7E000B82EC8 /* LaunchScreen.storyboard */,
 				FF4914F92A0BE7E000B82EC8 /* Info.plist */,
@@ -427,7 +424,6 @@
 			files = (
 				FF4914F02A0BE7DF00B82EC8 /* ViewController.swift in Sources */,
 				FF4915242A0BFE9100B82EC8 /* Data.swift in Sources */,
-				AD2444D32A11FD90000093E0 /* GameVC.swift in Sources */,
 				FF4915282A0C11DD00B82EC8 /* MyCollectionViewCell.swift in Sources */,
 				FF4914EC2A0BE7DF00B82EC8 /* AppDelegate.swift in Sources */,
 				AD2444D12A11CD0A000093E0 /* SetPlayerNumberVC.swift in Sources */,
