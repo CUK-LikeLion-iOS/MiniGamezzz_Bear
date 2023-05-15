@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9C-KR-FDf">
-                                        <rect key="frame" x="154.33333333333334" y="140" width="84.333333333333343" height="39"/>
+                                        <rect key="frame" x="154.66666666666666" y="140" width="84" height="39"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BB-Mg-jvX">
-                                <rect key="frame" x="148" y="89" width="97.333333333333314" height="20.333333333333329"/>
+                                <rect key="frame" x="148" y="89" width="97" height="20.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -113,6 +113,12 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41R-kz-zJR">
+                                                    <rect key="frame" x="8" y="8" width="385" height="135"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                             <constraints>
@@ -132,6 +138,7 @@
                                         <connections>
                                             <outlet property="gameDescription" destination="ERD-du-1Ff" id="sYa-se-Pez"/>
                                             <outlet property="gameName" destination="5gX-xG-qf2" id="nv0-Vg-136"/>
+                                            <outlet property="playButton" destination="41R-kz-zJR" id="ubi-k8-s5p"/>
                                             <outlet property="thumbnail" destination="ejg-8C-gWu" id="RCa-Oc-dJZ"/>
                                         </connections>
                                     </collectionViewCell>
@@ -147,6 +154,8 @@
                             <constraint firstItem="0BB-Mg-jvX" firstAttribute="centerX" secondItem="pON-6V-EAx" secondAttribute="centerX" id="Nq1-Q7-aME"/>
                             <constraint firstItem="0BB-Mg-jvX" firstAttribute="top" secondItem="pON-6V-EAx" secondAttribute="top" constant="30" id="a3K-Zk-ACP"/>
                             <constraint firstItem="36x-0c-gFD" firstAttribute="top" secondItem="pON-6V-EAx" secondAttribute="top" constant="80" id="cCg-CV-s4F"/>
+                            <constraint firstItem="36x-0c-gFD" firstAttribute="trailing" secondItem="pON-6V-EAx" secondAttribute="trailing" id="mex-ps-OSr"/>
+                            <constraint firstItem="36x-0c-gFD" firstAttribute="leading" secondItem="pON-6V-EAx" secondAttribute="leading" id="sXL-bP-L2d"/>
                         </constraints>
                     </view>
                     <connections>
@@ -157,6 +166,64 @@
             </objects>
             <point key="canvasLocation" x="861.83206106870227" y="-2.1126760563380285"/>
         </scene>
+        <!--Set Player NumberVC-->
+        <scene sceneID="7zf-Cl-T2X">
+            <objects>
+                <viewController storyboardIdentifier="SetPlayerNumber" id="7sn-uZ-jAQ" customClass="SetPlayerNumberVC" customModule="minigame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CZz-mZ-AUp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="SZS-A5-uZV">
+                                <rect key="frame" x="30" y="266" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8XP-vZ-651"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7e-1K-mty">
+                                <rect key="frame" x="30" y="351" width="333" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TEr-RI-jxH"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startClick:" destination="7sn-uZ-jAQ" eventType="touchUpInside" id="Nhq-JF-kbH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VF9-r7-nVh"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="SZS-A5-uZV" firstAttribute="leading" secondItem="VF9-r7-nVh" secondAttribute="leading" constant="30" id="408-9b-aId"/>
+                            <constraint firstItem="K7e-1K-mty" firstAttribute="top" secondItem="SZS-A5-uZV" secondAttribute="bottom" constant="35" id="I8F-Yy-nGh"/>
+                            <constraint firstItem="VF9-r7-nVh" firstAttribute="trailing" secondItem="SZS-A5-uZV" secondAttribute="trailing" constant="30" id="Jks-vC-sKA"/>
+                            <constraint firstItem="VF9-r7-nVh" firstAttribute="trailing" secondItem="K7e-1K-mty" secondAttribute="trailing" constant="30" id="MfE-qW-1Cz"/>
+                            <constraint firstItem="SZS-A5-uZV" firstAttribute="top" secondItem="VF9-r7-nVh" secondAttribute="top" constant="207" id="UUu-Rl-Px9"/>
+                            <constraint firstItem="K7e-1K-mty" firstAttribute="leading" secondItem="VF9-r7-nVh" secondAttribute="leading" constant="30" id="n74-KJ-yS4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerNumberTextField" destination="SZS-A5-uZV" id="yVS-UW-Xu2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZi-AI-8zi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606.8702290076335" y="-2.1126760563380285"/>
+        </scene>
     </scenes>
     <resources>
         <image name="gamecontroller.fill" catalog="system" width="128" height="79"/>
@@ -165,6 +232,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

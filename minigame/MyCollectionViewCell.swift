@@ -12,12 +12,12 @@ class MyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var gameDescription: UILabel!
     @IBOutlet weak var gameName: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
-
+    @IBOutlet weak var playButton: UIButton!
+    
     func configure(_ framework: GameFramework) {
         gameName.text = "\(framework.name)"
         thumbnail.image = UIImage(systemName: framework.imageName)
         gameDescription.text = framework.description
-
     }
     
 }
