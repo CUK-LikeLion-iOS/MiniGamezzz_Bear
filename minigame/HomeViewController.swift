@@ -31,7 +31,19 @@ extension HomeViewController: UICollectionViewDataSource {
         
         let framework = list[indexPath.item]
         cell.configure(framework)
+        
+        cell.playButton.tag = indexPath.row
+        cell.playButton.addTarget(self, action: #selector(playGame(sender: )), for: .touchUpInside)
+        
         return cell
+    }
+    
+    @objc func playGame(sender: UIButton) {
+        let gameID = GameFramework.list[sender.tag].id
+        guard let setPlayerNumberVC = self.storyboard?.instantiateViewController(withIdentifier: "SetPlayerNumber") as? SetPlayerNumberVC else { return }
+        
+        setPlayerNumberVC.gameID = gameID
+        self.present(setPlayerNumberVC, animated: false)
     }
 }
 
