@@ -19,13 +19,10 @@ class ViewController: UIViewController {
         animationView.animationSpeed = 0.5
         animationView.play()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            print("dd")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
             self.present(homeVC, animated: true, completion: nil)
         }
     }
-    
-    
 }
 
