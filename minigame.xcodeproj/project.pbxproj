@@ -11,6 +11,7 @@
 		1AB572F6062C54FAC6D72B14 /* Pods_minigameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F289A5BC6E1B09DFFA5BABE3 /* Pods_minigameTests.framework */; };
 		66968B60C6259C4273E2714E /* Pods_minigame_minigameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C19079C8121C250F8FFA05 /* Pods_minigame_minigameUITests.framework */; };
 		AD2444D12A11CD0A000093E0 /* SetPlayerNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2444D02A11CD0A000093E0 /* SetPlayerNumberVC.swift */; };
+		FF078D272A12492000AA5870 /* TapTapGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF078D262A12492000AA5870 /* TapTapGameVC.swift */; };
 		FF4914EC2A0BE7DF00B82EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914EB2A0BE7DF00B82EC8 /* AppDelegate.swift */; };
 		FF4914EE2A0BE7DF00B82EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914ED2A0BE7DF00B82EC8 /* SceneDelegate.swift */; };
 		FF4914F02A0BE7DF00B82EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4914EF2A0BE7DF00B82EC8 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		FF4915222A0BF4FA00B82EC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915212A0BF4FA00B82EC8 /* HomeViewController.swift */; };
 		FF4915242A0BFE9100B82EC8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915232A0BFE9100B82EC8 /* Data.swift */; };
 		FF4915282A0C11DD00B82EC8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */; };
+		FF67A8642A19CA670031D129 /* SliderGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67A8632A19CA670031D129 /* SliderGameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		F1714205577E7B78FEB2EA0E /* Pods-minigame-minigameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigame-minigameUITests.debug.xcconfig"; path = "Target Support Files/Pods-minigame-minigameUITests/Pods-minigame-minigameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F289A5BC6E1B09DFFA5BABE3 /* Pods_minigameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minigameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BDFBB358319ED647951C6C /* Pods-minigame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minigame.debug.xcconfig"; path = "Target Support Files/Pods-minigame/Pods-minigame.debug.xcconfig"; sourceTree = "<group>"; };
+		FF078D262A12492000AA5870 /* TapTapGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapTapGameVC.swift; sourceTree = "<group>"; };
 		FF4914E82A0BE7DF00B82EC8 /* minigame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minigame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4914EB2A0BE7DF00B82EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF4914ED2A0BE7DF00B82EC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		FF4915212A0BF4FA00B82EC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FF4915232A0BFE9100B82EC8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF67A8632A19CA670031D129 /* SliderGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderGameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 				FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */,
 				FF4914F12A0BE7DF00B82EC8 /* Main.storyboard */,
 				AD2444D02A11CD0A000093E0 /* SetPlayerNumberVC.swift */,
+				FF078D262A12492000AA5870 /* TapTapGameVC.swift */,
+				FF67A8632A19CA670031D129 /* SliderGameVC.swift */,
 				FF4914F42A0BE7E000B82EC8 /* Assets.xcassets */,
 				FF4914F62A0BE7E000B82EC8 /* LaunchScreen.storyboard */,
 				FF4914F92A0BE7E000B82EC8 /* Info.plist */,
@@ -424,7 +430,9 @@
 			files = (
 				FF4914F02A0BE7DF00B82EC8 /* ViewController.swift in Sources */,
 				FF4915242A0BFE9100B82EC8 /* Data.swift in Sources */,
+				FF078D272A12492000AA5870 /* TapTapGameVC.swift in Sources */,
 				FF4915282A0C11DD00B82EC8 /* MyCollectionViewCell.swift in Sources */,
+				FF67A8642A19CA670031D129 /* SliderGameVC.swift in Sources */,
 				FF4914EC2A0BE7DF00B82EC8 /* AppDelegate.swift in Sources */,
 				AD2444D12A11CD0A000093E0 /* SetPlayerNumberVC.swift in Sources */,
 				FF4914EE2A0BE7DF00B82EC8 /* SceneDelegate.swift in Sources */,
