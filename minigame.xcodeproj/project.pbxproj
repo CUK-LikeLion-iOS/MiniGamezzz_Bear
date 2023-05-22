@@ -26,6 +26,8 @@
 		FF4915242A0BFE9100B82EC8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915232A0BFE9100B82EC8 /* Data.swift */; };
 		FF4915282A0C11DD00B82EC8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */; };
 		FF67A8642A19CA670031D129 /* SliderGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67A8632A19CA670031D129 /* SliderGameVC.swift */; };
+		FFB45B912A1B7C11007E2F4D /* phone_shaking.json in Resources */ = {isa = PBXBuildFile; fileRef = FFB45B8E2A1B7C10007E2F4D /* phone_shaking.json */; };
+		FFB45B932A1B7C11007E2F4D /* ShakeItGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB45B902A1B7C10007E2F4D /* ShakeItGameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		FF4915232A0BFE9100B82EC8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FF4915272A0C11DD00B82EC8 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF67A8632A19CA670031D129 /* SliderGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderGameVC.swift; sourceTree = "<group>"; };
+		FFB45B8E2A1B7C10007E2F4D /* phone_shaking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phone_shaking.json; sourceTree = "<group>"; };
+		FFB45B902A1B7C10007E2F4D /* ShakeItGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeItGameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 				AD2444D02A11CD0A000093E0 /* SetPlayerNumberVC.swift */,
 				FF078D262A12492000AA5870 /* TapTapGameVC.swift */,
 				FF67A8632A19CA670031D129 /* SliderGameVC.swift */,
+				FFB45B8E2A1B7C10007E2F4D /* phone_shaking.json */,
+				FFB45B902A1B7C10007E2F4D /* ShakeItGameVC.swift */,
 				FF4914F42A0BE7E000B82EC8 /* Assets.xcassets */,
 				FF4914F62A0BE7E000B82EC8 /* LaunchScreen.storyboard */,
 				FF4914F92A0BE7E000B82EC8 /* Info.plist */,
@@ -299,6 +305,7 @@
 			files = (
 				FF4914F82A0BE7E000B82EC8 /* LaunchScreen.storyboard in Resources */,
 				FF4914F52A0BE7E000B82EC8 /* Assets.xcassets in Resources */,
+				FFB45B912A1B7C11007E2F4D /* phone_shaking.json in Resources */,
 				FF4914F32A0BE7DF00B82EC8 /* Main.storyboard in Resources */,
 				FF4915202A0BEBD000B82EC8 /* minigame.json in Resources */,
 			);
@@ -434,6 +441,7 @@
 				FF4915282A0C11DD00B82EC8 /* MyCollectionViewCell.swift in Sources */,
 				FF67A8642A19CA670031D129 /* SliderGameVC.swift in Sources */,
 				FF4914EC2A0BE7DF00B82EC8 /* AppDelegate.swift in Sources */,
+				FFB45B932A1B7C11007E2F4D /* ShakeItGameVC.swift in Sources */,
 				AD2444D12A11CD0A000093E0 /* SetPlayerNumberVC.swift in Sources */,
 				FF4914EE2A0BE7DF00B82EC8 /* SceneDelegate.swift in Sources */,
 				FF4915222A0BF4FA00B82EC8 /* HomeViewController.swift in Sources */,
@@ -614,6 +622,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6NUHA5DNR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = minigame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -642,6 +651,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6NUHA5DNR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = minigame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

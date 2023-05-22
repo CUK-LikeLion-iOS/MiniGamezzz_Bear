@@ -297,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l71-0F-GkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2656" y="-40"/>
+            <point key="canvasLocation" x="2616" y="-575"/>
         </scene>
         <!--Slider GameVC-->
         <scene sceneID="nzh-oy-QEZ">
@@ -371,7 +371,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1s4-TA-bLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2656" y="644"/>
+            <point key="canvasLocation" x="2616" y="130"/>
+        </scene>
+        <!--Shake It GameVC-->
+        <scene sceneID="beI-ib-S5m">
+            <objects>
+                <viewController storyboardIdentifier="ShakeItGameVC" id="nSH-Sv-nJA" customClass="ShakeItGameVC" customModule="minigame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPc-t7-JJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJm-n6-yBo">
+                                <rect key="frame" x="0.0" y="214" width="393" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEy-fr-Fwi">
+                                <rect key="frame" x="0.0" y="323" width="393" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="z32-hz-NcL">
+                                <rect key="frame" x="0.0" y="124" width="393" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="uf9-jT-zsH"/>
+                                </constraints>
+                                <color key="progressTintColor" systemColor="systemPinkColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="흔들면 시작합니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVK-69-Oh1">
+                                <rect key="frame" x="0.0" y="599" width="393" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="azp-9X-Bbf" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="411" width="393" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="yX1-nN-aa2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="phone_shaking"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cy9-fq-vqY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cy9-fq-vqY" firstAttribute="trailing" secondItem="azp-9X-Bbf" secondAttribute="trailing" id="7bY-XZ-afC"/>
+                            <constraint firstItem="z32-hz-NcL" firstAttribute="top" secondItem="Cy9-fq-vqY" secondAttribute="top" constant="65" id="CsJ-ja-dLr"/>
+                            <constraint firstItem="qEy-fr-Fwi" firstAttribute="top" secondItem="TJm-n6-yBo" secondAttribute="bottom" constant="25" id="DHT-RP-jhC"/>
+                            <constraint firstItem="z32-hz-NcL" firstAttribute="leading" secondItem="Cy9-fq-vqY" secondAttribute="leading" id="Fs3-1N-QP2"/>
+                            <constraint firstItem="TJm-n6-yBo" firstAttribute="trailing" secondItem="Cy9-fq-vqY" secondAttribute="trailing" id="KNf-nr-Ssh"/>
+                            <constraint firstItem="Cy9-fq-vqY" firstAttribute="trailing" secondItem="yVK-69-Oh1" secondAttribute="trailing" id="Kze-6E-GNc"/>
+                            <constraint firstItem="TJm-n6-yBo" firstAttribute="leading" secondItem="Cy9-fq-vqY" secondAttribute="leading" id="OGX-Ix-pkJ"/>
+                            <constraint firstItem="TJm-n6-yBo" firstAttribute="top" secondItem="z32-hz-NcL" secondAttribute="bottom" constant="80" id="Qqn-Gb-3e2"/>
+                            <constraint firstItem="qEy-fr-Fwi" firstAttribute="leading" secondItem="Cy9-fq-vqY" secondAttribute="leading" id="eSI-lg-cSX"/>
+                            <constraint firstItem="z32-hz-NcL" firstAttribute="trailing" secondItem="Cy9-fq-vqY" secondAttribute="trailing" id="jDJ-Bg-mSa"/>
+                            <constraint firstItem="qEy-fr-Fwi" firstAttribute="trailing" secondItem="Cy9-fq-vqY" secondAttribute="trailing" id="s42-N7-aEb"/>
+                            <constraint firstItem="yVK-69-Oh1" firstAttribute="leading" secondItem="Cy9-fq-vqY" secondAttribute="leading" id="tCE-d2-Ln7"/>
+                            <constraint firstItem="azp-9X-Bbf" firstAttribute="leading" secondItem="Cy9-fq-vqY" secondAttribute="leading" id="ukQ-kf-NLd"/>
+                            <constraint firstItem="azp-9X-Bbf" firstAttribute="top" secondItem="qEy-fr-Fwi" secondAttribute="bottom" constant="60" id="v2L-65-g0R"/>
+                            <constraint firstItem="yVK-69-Oh1" firstAttribute="top" secondItem="azp-9X-Bbf" secondAttribute="bottom" constant="60" id="x8d-dD-15m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="yVK-69-Oh1" id="CnV-gv-ahd"/>
+                        <outlet property="phoneShakingAnimation" destination="azp-9X-Bbf" id="EqB-oA-PgI"/>
+                        <outlet property="scoreLabel" destination="TJm-n6-yBo" id="gcs-03-tIl"/>
+                        <outlet property="timeBar" destination="z32-hz-NcL" id="Kgg-B9-W2e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odY-wK-eYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2615" y="823"/>
         </scene>
     </scenes>
     <resources>
@@ -391,6 +465,9 @@
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
