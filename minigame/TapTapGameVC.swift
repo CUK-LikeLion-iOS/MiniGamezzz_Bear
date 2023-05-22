@@ -1,7 +1,7 @@
 import UIKit
 
 class TapTapGameVC: UIViewController {
-    
+    var playerNumber = 0
     var count: Int = 0
     //var isButtonEnabled: Bool = false
     var timer: DispatchSourceTimer?

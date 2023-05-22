@@ -22,12 +22,25 @@ class SetPlayerNumberVC: UIViewController {
     @IBAction func startClick(_ sender: Any) {
         guard let playerNumber = Int(playerNumberTextField.text ?? "1") else { return }
         
-        let gameSB = UIStoryboard(name: gameID, bundle: Bundle.main)
         if (gameID == "ShakeIt") {
-            guard let gameVC = gameSB.instantiateViewController(withIdentifier: gameID) as? ShakeItGameVC else { return }
-            
+            guard let gameVC =
+                    self.storyboard?.instantiateViewController(withIdentifier: "ShakeItGameVC") as? ShakeItGameVC else {return }
             gameVC.playerNumber = playerNumber
-            self.present(gameVC, animated: true)
+            self.present(gameVC, animated: true,completion: nil)
+        }
+        else if (gameID == "Tap") {
+            
+            guard let gameVC =
+                    self.storyboard?.instantiateViewController(withIdentifier: "TapTapGameVC") as? TapTapGameVC else {return }
+            gameVC.playerNumber = playerNumber
+            self.present(gameVC, animated: true,completion: nil)
+        }
+        else if (gameID == "Bubi") {
+            
+            guard let gameVC =
+                    self.storyboard?.instantiateViewController(withIdentifier: "SliderGameVC") as? SliderGameVC else {return }
+            gameVC.playerNumber = playerNumber
+            self.present(gameVC, animated: true,completion: nil)
         }
     }
 

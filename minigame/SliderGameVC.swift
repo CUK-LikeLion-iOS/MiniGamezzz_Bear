@@ -2,6 +2,7 @@
 import UIKit
 
 class SliderGameVC: UIViewController {
+    var playerNumber = 0
     var timer: DispatchSourceTimer?
     var remainingTime: TimeInterval = 10.0
     var count : Int = 0
