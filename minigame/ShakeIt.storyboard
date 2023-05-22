@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shake It GameVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ShakeIt" id="Y6W-OH-hqX" customClass="ShakeItGameVC" customModule="minigame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv0-QU-nm1">
+                                <rect key="frame" x="0.0" y="214" width="393" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HH6-ik-hNU">
+                                <rect key="frame" x="0.0" y="323" width="393" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="GQO-nb-QfD">
+                                <rect key="frame" x="0.0" y="124" width="393" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="nF9-zY-0n2"/>
+                                </constraints>
+                                <color key="progressTintColor" systemColor="systemPinkColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="흔들면 시작합니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpK-Br-Gth">
+                                <rect key="frame" x="0.0" y="599" width="393" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="CLD-Y3-apd" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="411" width="393" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="P3T-Md-Z1y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="phone_shaking"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jpK-Br-Gth" firstAttribute="top" secondItem="CLD-Y3-apd" secondAttribute="bottom" constant="60" id="1aU-gc-MO5"/>
+                            <constraint firstItem="GQO-nb-QfD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4f3-aU-w8N"/>
+                            <constraint firstItem="GQO-nb-QfD" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="66J-9Y-42Z"/>
+                            <constraint firstItem="Bv0-QU-nm1" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="AAa-sr-V8S"/>
+                            <constraint firstItem="Bv0-QU-nm1" firstAttribute="top" secondItem="GQO-nb-QfD" secondAttribute="bottom" constant="80" id="BJ7-VB-pQ1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CLD-Y3-apd" secondAttribute="trailing" id="Et3-iS-n40"/>
+                            <constraint firstItem="Bv0-QU-nm1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RQQ-HZ-E6k"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jpK-Br-Gth" secondAttribute="trailing" id="VkC-lP-Yjc"/>
+                            <constraint firstItem="GQO-nb-QfD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="65" id="bmI-Kr-FUN"/>
+                            <constraint firstItem="HH6-ik-hNU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="euR-Lr-zSA"/>
+                            <constraint firstItem="HH6-ik-hNU" firstAttribute="top" secondItem="Bv0-QU-nm1" secondAttribute="bottom" constant="25" id="k6G-hX-2Bd"/>
+                            <constraint firstItem="HH6-ik-hNU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ms2-cm-Ub6"/>
+                            <constraint firstItem="CLD-Y3-apd" firstAttribute="top" secondItem="HH6-ik-hNU" secondAttribute="bottom" constant="60" id="vDs-8L-Ncf"/>
+                            <constraint firstItem="CLD-Y3-apd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wsf-i6-kTg"/>
+                            <constraint firstItem="jpK-Br-Gth" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xAB-vv-lyg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="jpK-Br-Gth" id="Fb9-Uz-EVP"/>
+                        <outlet property="phoneShakingAnimation" destination="CLD-Y3-apd" id="D4Y-02-1HA"/>
+                        <outlet property="scoreLabel" destination="Bv0-QU-nm1" id="8ai-4c-Hhm"/>
+                        <outlet property="timeBar" destination="GQO-nb-QfD" id="9u1-ho-BsE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
